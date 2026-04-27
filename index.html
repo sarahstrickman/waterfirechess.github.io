@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water and Fire Chess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Water &amp; Fire Chess</h1>
+        <nav>
+            <button class="tab-btn active" data-tab="home">Home</button>
+            <button class="tab-btn" data-tab="details">Details</button>
+            <button class="tab-btn" data-tab="directions">Directions</button>
+            <button class="tab-btn" data-tab="history">History of Chess</button>
+            <button class="tab-btn" data-tab="citations">Citations Powerpoint</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <h2>A New Way to Play</h2>
+            <p>Experience chess like never before with the elemental power of water and fire.</p>
+            <img src="assets/pieces-board.jpg" alt="Water and Fire Chess board with pieces">
+        </section>
+
+        <section id="details" class="tab-content">
+            <h2>Details</h2>
+            <img src="assets/WFC-cover.jpg" alt="Water and Fire Chess cover">
+            <img src="assets/WFC-board.jpg" alt="Water and Fire Chess board">
+            <img src="assets/WFC-design-spec.jpg" alt="Water and Fire Chess design spec">
+        </section>
+
+        <section id="directions" class="tab-content">
+            <h2>Directions</h2>
+            <p>The official Water &amp; Fire Chess directions are available for purchase. Get your copy today and master the elements!</p>
+            <button id="buy-btn" class="buy-btn">Buy Now</button>
+            <div id="payment-form" class="payment-form hidden">
+                <p class="form-note"><strong>Note:</strong> For the purposes of this project, all fields can be left blank.</p>
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" placeholder="John Doe">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                <div class="form-row">
+                    <div>
+                        <label for="card-exp">Expiration Date</label>
+                        <input type="text" id="card-exp" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" placeholder="123">
+                    </div>
+                </div>
+                <button id="submit-btn" class="submit-btn">Submit Order</button>
+            </div>
+            <div id="directions-result" class="hidden">
+                <h3>Thank you for your purchase!</h3>
+                <img src="assets/WFC-directions.jpg" alt="Water and Fire Chess directions">
+            </div>
+        </section>
+
+        <section id="history" class="tab-content">
+            <h2>History of Chess</h2>
+            <div class="pdf-container">
+                <embed src="assets/timeline-ppt.pdf" type="application/pdf" width="100%" height="800px">
+            </div>
+        </section>
+
+        <section id="citations" class="tab-content">
+            <h2>Citations Powerpoint</h2>
+            <div class="pdf-container">
+                <embed src="assets/citation-ppt.pdf" type="application/pdf" width="100%" height="800px">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
