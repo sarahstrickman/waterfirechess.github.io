@@ -235,6 +235,28 @@ main {
     display: none;
 }
 
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .pdf-container {
     background: #fff;
     border-radius: 8px;
