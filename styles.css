@@ -101,6 +101,7 @@ main {
 
 #details h2,
 #directions h2,
+#business h2,
 #history h2,
 #citations h2 {
     font-size: 2rem;
@@ -108,7 +109,8 @@ main {
     color: #4fc3f7;
 }
 
-#details img {
+#details img,
+#business img {
     display: block;
     max-width: 100%;
     margin: 0 auto 1.5rem;
